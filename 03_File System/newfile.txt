@@ -1,0 +1,3 @@
+Welcome to Node.js tutorial.
+Today topic : Synchronous file creation, appending content to that file and reading the file.
+Today we will learn how to create a file, how to append a file, how to read a file, 
