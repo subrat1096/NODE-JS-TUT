@@ -8,7 +8,7 @@ const questions = [
   "Why you want to learn Node.js?",
 ];
 
-collectAnswers(questions, (answers) => {
+const answerEvents = collectAnswers(questions, (answers) => {
   console.log(`Name: ${answers[0]}`);
   console.log(`Address: ${answers[1]}`);
   console.log(`Profession: ${answers[2]}`);
@@ -17,3 +17,5 @@ collectAnswers(questions, (answers) => {
   console.log("Thank you for your answers");
   process.exit();
 });
+
+answerEvents.on("answer", (answer) => console.log(`The answer is ${answer}`));
