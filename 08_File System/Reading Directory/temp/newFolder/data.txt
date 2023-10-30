@@ -1,0 +1,22 @@
+
+This is a test text file
+========================
+ES6 is really cool and have some awesome features
+    *   Default Parameters
+    *   Template literals
+    *   Tagged Templates
+    *   Destructing Assignments
+    *   Arrow Function
+    *   let and const
+    *   Rest and Spread Syntax
+    *   Map Objects
+    *   Set Objects   
+
+Data to append
+Data to append
+Data to append
+Data to append
+Data to append
+Data to append
+Data to append
+Data to append

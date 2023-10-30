@@ -1,4 +1,5 @@
 const collectAnswers = require("./lib/lib");
+const fs = require("fs");
 
 const questions = [
   "What is your name?",
@@ -9,12 +10,16 @@ const questions = [
 ];
 
 const answerEvents = collectAnswers(questions, (answers) => {
-  console.log(`Name: ${answers[0]}`);
-  console.log(`Address: ${answers[1]}`);
-  console.log(`Profession: ${answers[2]}`);
-  console.log(`Skills: ${answers[3]}`);
-  console.log(`Reason for learning Node.js: ${answers[4]}`);
-  console.log("Thank you for your answers");
+  let data;
+  let ansArray = [];
+  ansArray.push(`Name: ${answers[0]}\n`);
+  ansArray.push(`Address: ${answers[1]}\n`);
+  ansArray.push(`Profession: ${answers[2]}\n`);
+  ansArray.push(`Skills: ${answers[3]}\n`);
+  ansArray.push(`Reason for learning Node.js: ${answers[4]}\n`);
+  ansArray.push("Thank you for your answers");
+  data = ansArray.join("").toString();
+  fs.writeFileSync("data.txt", data);
   process.exit();
 });
 
